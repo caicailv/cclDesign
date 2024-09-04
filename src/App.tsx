@@ -1,12 +1,17 @@
 import { useState } from 'react'
+import RouterView, { routetList } from './router'
+import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
+
 import './App.scss'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-    
+    <div>
+      <div className="top">
+
+      </div>
+      <RouterView />
     </div>
   )
 }
